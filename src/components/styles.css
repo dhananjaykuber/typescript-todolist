@@ -1,0 +1,99 @@
+/* Input field */
+.input {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 1px #282c2d;
+  position: relative;
+  margin-top: 40px;
+}
+
+.input__field {
+  flex: 1;
+  background-color: #2d3133;
+  color: #696969;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+.input__submit {
+  background-color: #2d3133;
+  color: #696969;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* Todos list */
+.todos__list {
+  margin-top: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.todos__list::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Single todo */
+.single__todo {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 25px 0px;
+}
+
+.todo__text {
+  flex: 1;
+  margin-left: 15px;
+  color: #e0e0e0;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-size: 13px;
+  outline: none;
+  border: none;
+  /* background-color: #3c4249; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.single__todo input {
+  color: #282c2d;
+  padding: 0px 5px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  width: 15px;
+  background-color: #51555f;
+  box-shadow: 0px 0px 2px #2a2d30;
+  margin-left: 0px;
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@media (max-width: 650px) {
+  .single__todo,
+  .input {
+    width: 100%;
+  }
+  .todos__list {
+    width: 100%;
+  }
+  .single__todo {
+    margin-right: 0px;
+  }
+}
